@@ -1,0 +1,75 @@
+
+
+.overlay {
+
+    position: relative;
+    overflow: hidden;
+
+    &__text {
+    @include font(18px, null, 1.55, null)   
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FFFFFF;
+    background-color: rgba(33, 150, 243, 0.9);
+    font-style: 400px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: var(--transition);
+    text-align: center;
+    }
+}
+
+.project__item {
+    position: relative;
+
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    }
+}
+
+.project__link:hover .overlay__text,
+.project__link:focus .overlay__text {
+    transform: translateY(0%);
+}
+
+.project a {
+    text-decoration: none;
+}
+
+
+
+.project {
+    width: 1170px;
+
+    &__title {
+    color: var(--title-text-color);
+    @include font(18px, 700, 2.0, 0.06em);
+    }
+
+    &__text {
+    @include font(16px, 400, 1.87, 0.03em);
+    color: var(--primary-text-color);
+    }
+
+    &__card {
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+   
+
+}
+}
+
+
+

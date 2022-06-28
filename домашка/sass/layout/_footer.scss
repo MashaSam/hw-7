@@ -1,0 +1,89 @@
+.footer {
+    background-color: var(--background-color-dark);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.logo.footer {
+    display: block;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+
+
+.address__link {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    &:not(:last-child) {
+    margin-bottom: 9px;
+    }
+}
+
+
+
+.footer .address__link:hover ,
+.footer .address__link:focus {
+    color: var(--accent-color);
+    transition: color var(--transition);
+}
+
+address {
+    @include font(14px, 400, 1.7, 0.03em);
+    font-family: 'Roboto';
+    font-style: normal;
+    text-decoration: none;
+    
+    
+}
+
+
+
+
+.footer .address__link--different {
+    color: var(--addres-color);
+    text-decoration: none;
+
+}
+
+
+.addres-box {
+    width: 231px;
+}
+
+.follow {
+    width: 206px;
+    margin-left: 70px;
+    
+    
+}
+
+.footer__title {
+    @include font(14px, 700, 1.14, null);
+    display: flex;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+.footer .site__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+}
+
+.footer .site__link:hover,
+.footer .site__link:focus {
+    background-color: var(--accent-color);
+    transition: var(--transition);
+
+}
+
+.container-footer {
+    display: flex;
+    align-items: baseline;
+}
+
